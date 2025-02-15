@@ -1,0 +1,123 @@
+/* Our Motive Page */
+.our-motive-page {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+  }
+
+
+  /* General Styles for the component */
+.our-motive-page {
+    padding: 20px;
+  }
+  
+  .motive-highlight {
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .motive-highlight:hover {
+    transform: scale(1.05);
+  }
+  
+  .motive-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  
+  /* For smaller devices (tablets and phones) */
+  @media (max-width: 768px) {
+    .our-motive-page h2 {
+      font-size: 1.75rem; /* Adjust heading size for smaller devices */
+    }
+  
+    .our-motive-page h3 {
+      font-size: 1.5rem; /* Smaller heading for mobile view */
+    }
+  
+    .motive-highlight p {
+      font-size: 0.9rem; /* Slightly smaller text for mobile readability */
+    }
+  
+    .motive-icon {
+      font-size: 2rem; /* Reduce icon size for mobile */
+    }
+  
+    .motive-image {
+      width: 100%; /* Ensure image takes full width on mobile */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    /* Add padding for text to make it easier to read on mobile */
+    .motive-highlight {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* For very small devices (mobile phones under 576px) */
+  @media (max-width: 576px) {
+    .our-motive-page h2 {
+      font-size: 1rem; /* Further reduce heading size for very small devices */
+    }
+  
+    .motive-highlight {
+      padding: 1rem; /* Reduce padding for compact view */
+    }
+  
+    .motive-highlight p {
+      font-size: 0.85rem;
+    }
+  }
+  
+
+  
+  /* Section Titles */
+  .our-motive-page h2,
+  .our-motive-page h3 {
+    color: #012620;
+    font-weight: bold;
+    font-size:2rem;
+  }
+  
+  /* Paragraph Styling */
+  .our-motive-page p {
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Motive Image */
+  .motive-image {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Key Highlights Section */
+  .motive-highlight {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .motive-highlight:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .motive-icon {
+    font-size: 50px;
+    color: #e67e22;
+  }
+  
+  .motive-highlight h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #012620;
+  }
+  
+  .motive-highlight p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  

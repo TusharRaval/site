@@ -1,0 +1,95 @@
+/* Tyre Sale Section */
+.tyre-sale-section {
+    background-color: #fff5ee;
+    padding: 60px 0;
+}
+
+/* Before & After Image */
+.tyre-sale-before-after-img {
+    transition: transform 0.3s ease;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.tyre-sale-before-after-img:hover {
+    transform: scale(1.05);
+}
+
+.tyre-sale-section h2,
+.tyre-sale-section h3 {
+    color: #012620;
+    font-weight: bold;
+}
+
+.tyre-sale-section p {
+    color: #012620;
+}
+
+/* Tyre Brand Logos */
+.tyre-sale-img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.tyre-sale-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tyre Sale Process Overview */
+.tyre-sale-process-overview {
+    background-color: #e8f5e9;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tyre-sale-process-overview h3 {
+    font-size: 2rem;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.tyre-sale-process-overview p {
+    font-size: 1rem;
+    color: #012620;
+    line-height: 1.6;
+}
+
+.tyre-sale-process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.process-step {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.process-icon {
+    font-size: 50px;
+}
+
+.process-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.process-step p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-top: 10px;
+}

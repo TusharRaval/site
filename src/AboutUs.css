@@ -1,0 +1,60 @@
+/* About Us Page Styles */
+
+
+
+
+.about-us {
+  text-align: center;
+  background-color: #012620;
+  padding: 20px;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.about-us h3 {
+  font-weight: bold;
+  color: #e67e22;
+}
+
+.about-us p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.about-us ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-us li {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.about-us img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Moving Numbers */
+.about-us h3 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-us h2 {
+      font-size: 2rem;
+  }
+  .about-us h3 {
+      font-size: 2rem;
+  }
+  .about-us p {
+      font-size: 0.9rem;
+  }
+}

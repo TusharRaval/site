@@ -1,0 +1,73 @@
+/* About.css */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+   
+}
+.a{
+    text-align:center;
+    color:#ffffff;
+}
+
+.about {
+    font-family: ProximaNova, Arial, sans-serif;
+   
+    height: 100%;
+}
+
+
+
+
+
+
+.about-content {
+    background-color: #012620;
+    padding: 50px 0;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #ffff;;
+}
+
+@media (max-width: 992px) {
+    .about-section {
+        text-align: center;
+    }
+    .about-text {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-text h1 {
+        font-size: 2.5rem;
+    }
+    .about-text p {
+        font-size: 1.2rem;
+    }
+    .btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-section {
+        padding: 2rem 0;
+    }
+    .about-text h1 {
+        font-size: 2rem;
+    }
+    .about-content h2 {
+        font-size: 2rem;
+    }
+}

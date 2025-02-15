@@ -1,0 +1,90 @@
+/* Complete Refurbishment Section */
+.cali-complete-refurbishment-section {
+    background-color: #f0f8ff; /* Light Cali-themed blue */
+    padding: 60px 0;
+}
+
+.cali-complete-refurbishment-section h2,
+.cali-complete-refurbishment-section h3 {
+    color: #2a4d69; /* Cali Blue-Gray */
+    font-weight: bold;
+}
+
+.cali-complete-refurbishment-section p {
+    color: #2a4d69;
+}
+
+/* Before & After Image */
+.cali-wheel-before-after-img {
+    transition: transform 0.3s ease;
+    border: 2px solid #d3d3d3;
+    border-radius: 10px;
+}
+
+.cali-wheel-before-after-img:hover {
+    transform: scale(1.05);
+}
+
+/* Wheel Brand Logos */
+.cali-wheel-img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #d3d3d3;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cali-wheel-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Process Overview */
+.cali-process-overview {
+    background-color: #e8f8f5; /* Light teal for Cali vibes */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cali-process-overview h3 {
+    color: #e67e22;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cali-process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cali-process-step {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cali-process-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cali-process-icon {
+    font-size: 50px;
+    color: #e67e22;
+}
+
+.cali-process-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.cali-process-step p {
+    font-size: 0.95rem;
+    color: #2a4d69;
+    margin-top: 10px;
+}

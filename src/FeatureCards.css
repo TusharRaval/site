@@ -1,0 +1,91 @@
+/* General Styling */
+body {
+
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .landing-pa {
+    text-align: center;
+  /*  padding: 50px 0;*/
+  background-color: #012620;
+
+  }
+
+  
+  
+  /* Hero Section */
+  .hero-section {
+    padding: 80px 0;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 10px auto;
+    color:#ffffff;
+  }
+  
+  .hero-image-container {
+     max-width:100%;
+   
+    
+  }
+  
+  .hero-image {
+    width: 100%;
+    max-width: 83%;
+    border-radius: 10px;
+  }
+  
+ 
+  
+  /* Features Section */
+  .feature-section {
+    /*padding: 60px 0;*/
+    background-color: #012620;
+
+  }
+  
+
+  .feature-section p {
+    /*padding: 60px 0;*/
+    color:#ffffff;
+    
+  }
+  .feature-card p {
+    color:#012620;
+  }
+
+  .feature-card {
+    background: white;
+    color: black;
+    padding: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .feature-card.highlight {
+    background-color: #00ffcc;
+    font-weight: bold;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+    .feature-card {
+      margin: 10px 0;
+    }
+  }
+  

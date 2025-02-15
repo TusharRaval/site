@@ -1,0 +1,95 @@
+/* Alloy Wheel Customization Section */
+.alloy-complete-customization-section {
+    background-color: #fff5ee;
+    padding: 60px 0;
+}
+
+.alloy-complete-customization-section h2,
+.alloy-complete-customization-section h3 {
+    color: #012620;
+    font-weight: bold;
+}
+
+.alloy-complete-customization-section p {
+    color: #012620;
+}
+
+/* Before & After Image */
+.alloy-wheel-before-after-img {
+    transition: transform 0.3s ease;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.alloy-wheel-before-after-img:hover {
+    transform: scale(1.05);
+}
+
+/* Wheel Brand Logos */
+.alloy-wheel-img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.alloy-wheel-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Process Overview */
+.alloy-process-overview {
+    background-color: #e8f5e9;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alloy-process-overview h3 {
+    font-size: 2rem;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.alloy-process-overview p {
+    font-size: 1rem;
+    color: #012620;
+    line-height: 1.6;
+}
+
+.alloy-process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.process-step {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.process-icon {
+    font-size: 50px;
+}
+
+.process-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.process-step p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-top: 10px;
+}

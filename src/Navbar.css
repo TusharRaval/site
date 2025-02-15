@@ -1,0 +1,457 @@
+/* Navbar.css */
+
+  
+
+
+
+
+  
+ /* LandingPage.css*/
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    
+   
+  }
+  /* Dropdown Menu Styles */
+.navbar .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1050; /* Ensure it stays on top */
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block; /* Ensure dropdown is fully shown */
+    max-height: none !important; /* Remove height restrictions */
+    overflow: visible !important; /* Prevent unnecessary scrollbars */
+    width: auto; /* Allow content to determine width */
+    min-width: 150px; /* Ensure it doesn't collapse */
+    padding: 0.5rem 1rem; /* Optional: Adds some space for content */
+  }
+  
+  /* Additional Reset for Mobile View */
+  @media (max-width: 991.98px) {
+    .navbar .dropdown-menu {
+      position: static !important; /* In case absolute positioning causes issues */
+      width: 100% !important; /* Ensures full width on mobile */
+      box-shadow: none; /* Optional: Removes shadow for simplicity */
+      border-radius: 0 !important; /* Prevents rounded corners */
+    }
+  }
+  
+
+ 
+  
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #e67e22;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icon i {
+    color: #ffffff;  /* Ensure icons inside are white */
+}
+
+/* When in mobile view, center everything inside the menu */
+ 
+  
+  
+  @font-face {
+    font-family: ProximaNova;
+    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot);
+    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.woff) format('woff');
+    font-weight: 400;
+    font-style: normal
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,300;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sniglet:wght@800&family=Ubuntu:wght@500&display=swap');
+   
+  }
+  .landing-page {
+      font-family: ProximaNova,Arial, sans-serif;
+  
+      height:100%;
+    }
+    .b{
+      color: #ffff;
+      background-color:#012620;
+      font-weight:bold;
+    }
+    .i{
+      height:20px;
+      padding-right:20px;
+    }
+    .btn.btn-dark{
+      color:#ffffff;
+      padding-right:20px;
+    }
+
+/* Dropdown Menu Styles */
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+/* Navbar styles */
+.navbar {
+  padding: 1rem;
+  color: #012620;
+  font-weight: bold;
+  position:relative;
+  z-index:1;
+  
+}
+
+.nav-link {
+  color: #012620;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+/* Logo styling */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.navbar-brand img {
+  height: 35px;
+  width: auto;
+}
+
+/* Smaller navbar toggler */
+.navbar-toggler {
+  padding: 5px 8px;
+  font-size: 0.8rem;
+  border: none;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+      padding: 0.5rem 1rem;
+  }
+
+  .navbar-brand {
+      font-size: 0.9rem;
+      flex-grow: 1;
+  }
+
+  .navbar-toggler {
+      padding: 4px 6px;
+      font-size: 0.7rem;
+  }
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #e67e22;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon i {
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .social-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin-top: 10px;
+  }
+}
+
+
+    
+
+    
+    
+    .hero-section {
+      background-color: #fff5ee;
+      padding:0px 0px 250px 0px;
+      overflow:hidden;
+      position:relative;
+      z-index:1;
+      
+      
+    }
+    
+    .hero-text h1 {
+      font-size: 4.5rem;
+      color: #012620;
+      padding:0px 0px 50px 0px;
+      
+    }
+    
+    .hero-text p {
+      font-size: 1.5rem;
+      color: #012620;
+      padding:0px 0px 50px 0px;
+      
+    }
+    
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+    }
+    .hero-text .btn {
+        background-color: #e67e22;
+        color: #ffffff;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .hero-text .btn:hover {
+        background-color: #d35400;
+      }
+    
+    @media (max-width: 992px) {
+      .hero-section {
+        text-align: center;
+      }
+      .hero-text {
+        margin-bottom: 2rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+      .hero-text p {
+        font-size: 1rem;
+      }
+      .btn {
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .hero-section {
+        padding: 2rem 0;
+      }
+      .hero-text h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+  
+  
+  
+  @font-face {
+    font-family: ProximaNova;
+    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot);
+    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.woff) format('woff');
+    font-weight: 400;
+    font-style: normal
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,300;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sniglet:wght@800&family=Ubuntu:wght@500&display=swap');
+   
+  }
+  .landing-page {
+      font-family: ProximaNova,Arial, sans-serif;
+     
+  
+      height:100%;
+    }
+    .we{
+      height:40px;
+      
+    }
+    .b{
+      color: #ffff;
+      background-color:#012620;
+      font-weight:bold;
+    }
+    .i{
+      height:20px;
+      padding-right:20px;
+    }
+    .btn.btn-dark{
+      color:#ffffff;
+      padding-right:20px;
+    }
+    
+    .navbar {
+      padding: 1rem;
+      color: #012620;
+      font-weight:bold;
+      position:relative;
+      z-index:1000;
+    }
+    .nav-link {
+      color: #012620;
+      font-weight:bold;
+      padding: 0.5rem 1rem;
+    }
+    
+    .hero-section {
+      background-color: #fff5ee;
+      padding:0px 0px 250px 0px;
+      
+      position:relative;
+      z-index:1;
+      
+    }
+    
+    .hero-text h1 {
+      font-size: 3.8rem;
+      color:rgb(255, 255, 255);
+      padding:0px 0px 50px 0px;
+      
+    }
+    
+    .hero-text p {
+      font-size: 1.2rem;
+      color: #ffffff !important;
+      padding:0px 0px 50px 0px;
+      
+    }
+    
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+    }
+    .hero-text .btn {
+        background-color: #e67e22;
+        color: #ffffff;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .hero-text .btn:hover {
+        background-color: #d35400;
+      }
+    
+    @media (max-width: 992px) {
+      .hero-section {
+        text-align: center;
+      }
+      .hero-text {
+        margin-bottom: 2rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+      .hero-text p {
+        font-size: 1rem;
+      }
+      .btn {
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .navbar a{
+        font-size:0.8rem;
+      }
+    
+      .hero-section {
+        padding: 2rem 0;
+      }
+      .hero-text h1 {
+        font-size: 1.8rem;
+      }
+    }
+    /* Ensure the logo appears in mobile view */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing */
+  font-size: 1rem; /* Adjust text size */
+}
+
+/* Ensure the logo remains visible */
+.navbar-brand img {
+  height: 35px; /* Adjust logo size */
+  width: auto;
+}
+
+/* Reduce the size of the navbar toggler button */
+.navbar-toggler {
+  padding: 5px 8px; /* Smaller padding */
+  font-size: 0.8rem; /* Reduce icon size */
+  border: none;
+}
+
+/* Ensure the logo and toggler button stay in one line */
+@media (max-width: 576px) {
+  .navbar {
+      padding: 0.5rem 1rem;
+  }
+
+  .navbar-brand {
+      font-size: 0.9rem;
+      flex-grow: 1;
+  }
+
+  .navbar-toggler {
+      padding: 4px 6px; /* Further reduce padding */
+      font-size: 0.7rem;
+  }
+}

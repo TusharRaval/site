@@ -1,0 +1,53 @@
+/* Additional Styling */
+.header-section {
+    background-color: #012620; /* Light background */
+    padding: 20px;
+  }
+  
+  .location-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .appointment-section {
+    background-color: #012620;
+    padding: 20px;
+  }
+  
+  .highlight-text {
+    color: red;
+    font-weight: bold;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    /* Mobile styles */
+    .location-title {
+      font-size: 24px;
+    }
+  
+    .appointment-section h3 {
+      font-size: 18px;
+    }
+  
+    .appointment-section h4 {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1200px) {
+    /* Tablet styles */
+    .location-title {
+      font-size: 28px;
+    }
+  
+    .appointment-section h3 {
+      font-size: 20px;
+    }
+  }
+  

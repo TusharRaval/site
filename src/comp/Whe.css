@@ -1,0 +1,95 @@
+/* Wheel Personalization Section */
+.wheel-personalization-section {
+    background-color: #fff5ee;
+    padding: 60px 0;
+}
+
+.wheel-personalization-section h2,
+.wheel-personalization-section h3 {
+    color: #012620;
+    font-weight: bold;
+}
+
+.wheel-personalization-section p {
+    color: #012620;
+}
+
+/* Before & After Image */
+.wheel-personalization-before-after-img {
+    transition: transform 0.3s ease;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.wheel-personalization-before-after-img:hover {
+    transform: scale(1.05);
+}
+
+/* Wheel Brand Logos */
+.wheel-personalization-img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.wheel-personalization-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Process Overview */
+.wheel-personalization-process-overview {
+    background-color: #e8f5e9;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wheel-personalization-process-overview h3 {
+    font-size: 2rem;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.wheel-personalization-process-overview p {
+    font-size: 1rem;
+    color: #012620;
+    line-height: 1.6;
+}
+
+.wheel-personalization-process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.process-step {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.process-icon {
+    font-size: 50px;
+}
+
+.process-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.process-step p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-top: 10px;
+}

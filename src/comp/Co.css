@@ -1,0 +1,147 @@
+
+
+/* Complete Refurbishment Section */
+
+
+/* Process Step Icon Styling */
+.process-step .process-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.process-step .process-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Step Title Styling */
+.process-step .process-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
+.complete-refurbishment-section {
+    background-color: #fff5ee;
+    padding: 60px 0;
+}
+
+.complete-refurbishment-section h2,
+.complete-refurbishment-section h3 {
+    color: #012620;
+    font-weight: bold;
+}
+
+.complete-refurbishment-section p{
+    color: #012620;
+}
+.complete-refurbishment-section {
+    color: #012620;
+}
+/* Before & After Image */
+.wheel-before-after-img {
+    transition: transform 0.3s ease;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.wheel-before-after-img:hover {
+    transform: scale(1.05);
+}
+
+/* Wheel Brand Logos */
+.wheel-img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.wheel-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Process Overview */
+.process-overview {
+    background-color: #e8f5e9;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.process-overview h3 {
+    font-size: 2rem;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.process-overview p {
+    font-size: 1rem;
+    color: #012620;
+    line-height: 1.6;
+}
+
+.process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.process-step {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.process-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.process-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.process-step p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* Process Overview */
+.process-overview {
+    background-color: #e8f5e9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.process-overview h3 {
+    color: #e67e22;
+}
+
+.process-overview p {
+    font-size: 1rem;
+    color: #012620;
+    line-height: 1.6;
+}
