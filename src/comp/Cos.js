@@ -20,10 +20,10 @@ import afterImage from "../images/g2.png";
 import o from "../images/o.jpg";
 import r from "../images/c.jpg";
 
-import co from '../images/co.png';
-import co2 from '../images/co2.png';
-import co3 from '../images/co3.png';
-import co4 from '../images/co4.png';
+import co from '../images/cco.jpeg';
+import co2 from '../images/cco2.jpeg';
+import co3 from '../images/cco3.jpeg';
+import co4 from '../images/cco4.jpeg';
 import co5 from '../images/co5.png';
 import co6 from '../images/co6.png'
 

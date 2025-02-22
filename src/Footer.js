@@ -1,9 +1,10 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import w from './images/we.jpeg';
+import w from './images/we2.jpeg';
 import fu from './images/fu.png';
 import lan from './images/lan.jpg'
+import lann from './images/lan6.jpg';
 
 const Footer = ({ homeRef, aboutRef, servicesRef, moRef, teamRef, piRef, contactRef }) => {
   const closeMobileNavbar = () => {
@@ -11,15 +12,33 @@ const Footer = ({ homeRef, aboutRef, servicesRef, moRef, teamRef, piRef, contact
   };
 
   return (
-    <footer className="footer" id="h"  style={{
-        backgroundImage: `url(${lan})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundColor: "#2c3e50",
-        color: "#ffffff",
-        padding: "40px 0"
-      }}>
+    <footer
+  className="footer"
+  style={{
+    position: "relative",
+    color: "#ffffff",
+    padding: "40px 0",
+    overflow: "hidden",
+  }}
+>
+  {/* Blurred Background Div */}
+  <div
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundImage: `url(${lann})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      filter: "blur(2px)",
+      zIndex: -1,
+      opacity: 0.8,
+    }}
+  ></div>
+   
       <div className="container">
         <div className="row">
           {/* About Us Section */}
@@ -66,7 +85,7 @@ const Footer = ({ homeRef, aboutRef, servicesRef, moRef, teamRef, piRef, contact
           <div className="col-lg-3 col-md-6 col-12 mb-4" style={{backgroundColor:"transparent"}}>
             <h5>Contact Info</h5>
             <ul className="list-unstyled">
-              <li>Email: info@whellgeniusrefurbished.com</li>
+              <li>Email: info@wheelgeniusrefurbished.com</li>
               <li>Phone: +91 89806 62985</li>
               <li>Phone-2: +91 78019 66355</li>
               <li>

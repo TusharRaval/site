@@ -6,7 +6,7 @@ import './LandingPage.css';
 import a from './images/ie95id6g.png';
 import b from './images/ar.png';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import we from './images/we.jpeg';
+import we from './images/we2.jpeg';
 import ServicesPage from './ServicesPage';
 import AboutUs from './AboutUs';
 import OurTeam from './OurTeam';
@@ -20,9 +20,37 @@ import Info from './Info';
  import l2 from './images/l2.png';
  import l3 from './images/l3.png';
  import l4 from './images/l4.png';
- import lan from './images/lan.jpg';
+ import lan from './images/lan9.jpg';
+import { px } from 'framer-motion';
+import load from './images/load2.gif';
+import lan2 from './images/lan2.jpg';
+import lan5 from './images/lan5.jpg';
 
 const LandingPage = () => {
+
+    const [showVideoPopup, setShowVideoPopup] = useState(false);
+
+    const [loading, setLoading] = useState(true);
+
+  // Show loading for 3 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+    return () => clearTimeout(timer);
+  }, []);
+
+    // Trigger the YouTube pop-up after 3 seconds
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowVideoPopup(true);
+        }, 6500);
+        return () => clearTimeout(timer);
+    }, []);
+
+    const closePopup = () => {
+        setShowVideoPopup(false);
+    };
 
     UseScrollToSection();
 
@@ -80,7 +108,21 @@ const LandingPage = () => {
         
         ref.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
         closeMobileNavbar(); // Close navbar when navigating
+
     };
+
+    if (loading) {
+        return (
+          <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+            <img
+              src={load}
+              alt="Loading..."
+              style={{ width: '300px', height: '300px' }}
+            />
+          </div>
+        );
+      }
+      
 
     return (
         <div className="landing-page" id='l'>
@@ -201,11 +243,144 @@ const LandingPage = () => {
                 </div>
             </nav>
 
-            <section className="hero-section text-center text-lg-start hero-background" style={{color:"#ffffff"}} id="l">
+            <section
+  className="hero-section text-center text-lg-start"
+  style={{
+    position: "relative",
+    color: "#ffffff",
+    height: "100vh",
+    overflow: "hidden",
+  }}
+  id="l"
+>
+  {/* ✅ Background Image Carousel */}
+  <div
+    id="heroCarousel"
+    className="carousel slide"
+    data-bs-ride="carousel"
+    data-bs-interval="3000"
+    data-bs-touch="true"
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      zIndex: -1,
+    }}
+  >
+    <div className="carousel-inner" style={{ height: "100%" }}>
+      <div
+        className="carousel-item active"
+        style={{
+          height: "100%",
+          backgroundImage: `url(${lan})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "blur(1px)",
+        }}
+      ></div>
+      <div
+        className="carousel-item"
+        style={{
+          height: "100%",
+          backgroundImage: `url(${lan2})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "blur(1px)",
+        }}
+      ></div>
+      <div
+        className="carousel-item"
+        style={{
+          height: "100%",
+          backgroundImage: `url(${lan5})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "blur(1px)",
+        }}
+      ></div>
+    </div>
+  </div>
+
+  {/* ✅ Hero Section Content (Text, etc.) */}
+  <div
+    className="hero-content"
+    style={{
+      position: "relative",
+      zIndex: 2, // Keep text above the background
+      padding: "10px",
+    }}
+  >
+   
+  </div>
+
+  {/* ✅ Fixed Carousel Controls - Move Outside .carousel-inner */}
+  <button
+    className="carousel-control-prev"
+    type="button"
+    data-bs-target="#heroCarousel"
+    data-bs-slide="prev"
+    style={{
+      zIndex: 1000, // Higher than text
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "15%", // Tap area
+      height: "100%",
+      background: "transparent",
+      border: "none",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      cursor: "pointer",
+      pointerEvents: "auto",
+    }}
+  >
+    <span
+      className="carousel-control-prev-icon"
+      aria-hidden="true"
+      style={{ filter: "brightness(100%)", width: "30px", height: "30px" }}
+    ></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+
+  <button
+    className="carousel-control-next"
+    type="button"
+    data-bs-target="#heroCarousel"
+    data-bs-slide="next"
+    style={{
+      zIndex: 1000, // Higher than text
+      position: "absolute",
+      top: 0,
+      right: 0,
+      width: "15%", // Tap area
+      height: "100%",
+      background: "transparent",
+      border: "none",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      cursor: "pointer",
+      pointerEvents: "auto",
+    }}
+  >
+    <span
+      className="carousel-control-next-icon"
+      aria-hidden="true"
+      style={{ filter: "brightness(100%)", width: "30px", height: "30px" }}
+    ></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+
+
+
+
+  {/* Content */}
   <div className="container d-flex flex-column flex-lg-row align-items-center py-5">
-    {/* Content */}
     <div className="hero-text me-lg-5 text-center text-lg-start">
-      <h1 className="fw-bold">Revive Your Ride – Premium Refurbished Alloy Wheels</h1>
+      <h1 className="fw-bold" >Revive Your Ride – Premium Refurbished Alloy Wheels</h1>
       <p className="text-muted">
         Transform your wheels with expertly refurbished alloy options that offer both style and performance.
         Experience like-new looks and enhanced driving dynamics, all at a fraction of the cost of new wheels.
@@ -214,27 +389,21 @@ const LandingPage = () => {
         <a href="/resume.pdf" download="Alloy-Wheels-Brochure.pdf" className="btn btn-primary me-sm-3 my-2">
           Download Brochure
         </a>
-        <a href="https://wa.me/8980662985" target="_blank" rel="noopener noreferrer" className="btn btn-success my-2">
+        <a
+          href="https://wa.me/8980662985"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-success my-2"
+        >
           WhatsApp Us
         </a>
       </div>
     </div>
-
-    <div className="youtube-video mt-4 col-lg-6">
-    <h3 className="text-center">Watch Our Alloy Wheel Transformation</h3>
-    <iframe
-      width="100%"
-      height="415"
-      src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-      title="Alloy Wheel Transformation"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-  </div>
-
   </div>
 </section>
+
+
+
 
 
 
@@ -247,7 +416,42 @@ const LandingPage = () => {
             <section id='f' ref={contactRef}><Form /></section>
             <section id='f' ref={infRef}><Info /></section>
             <Footer />
+           
+            {/* YouTube Video Modal */}
+            {showVideoPopup && (
+                <div className="modal d-block" tabIndex="-1" role="dialog" style={{ height:"600px", backgroundColor: 'rgba(0,0,0,0.5)',color:"#000000" }}>Watch Our Introduction Video
+                    <div className="modal-dialog modal-lg"   style={{ height:"600px"}} role="document">
+                        <div className="modal-content" style={{ height:"500px"}}>
+                            <div className="modal-header">
+                                <h5 className="modal-title">Watch Our Introduction Video</h5>
+                                <button type="button" className="btn-close" aria-label="Close" onClick={closePopup}></button>
+                            </div>
+                            <div className="modal-body">
+                                <div className="embed-responsive embed-responsive-16by9">
+                                    <iframe
+                                        className="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                                        allowFullScreen
+                                        title="YouTube Video"
+                                        width="100%"
+                                        height="300px"
+                                    ></iframe>
+                                </div>
+                            </div>
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" onClick={closePopup}>Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+        
+            
+
         </div>
+
+
+
     );
 };
 

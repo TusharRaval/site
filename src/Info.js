@@ -23,8 +23,8 @@ function Info() {
           <h1 className="location-title">AHMEDABAD</h1>
           <p>Shed No 52 Jay Industrial Park, Near Sankalp Industrial Estate Nana Chiloda Naroda GIDC Ahmedabad, Gujarat- 382330</p>
           <p>
-            <strong>Phone:</strong> +91 89806 62985 <br />
-            <strong>Email:</strong> <a href="mailto:info@wgrpvl.ocm">info@wgrpvl.ocm</a>
+            <strong>Phone:</strong> +91 77372 63790 <br />
+            <strong>Email:</strong> <a href="mailto: info@wheelgeniusrefurbished.com" style={{textDecoration:"none", color:"#ffffff"}}> info@wheelgeniusrefurbished.com</a>
           </p>
           <h4>+91 78019 66355</h4>
          

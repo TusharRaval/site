@@ -7,15 +7,84 @@ html {
   padding-bottom: 120px; /* Adjust the value as needed */
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  width: 7%; /* Make arrows more clickable */
+  opacity: 1 !important; /* Always visible */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background for better visibility */
+  border-radius: 50%;
+  padding: 10px;
+}
+@media (max-width: 768px) { /* Mobile & Tablet */
+  .carousel-control-prev,
+  .carousel-control-next {
+    z-index: 10;
+   portions:absolute;
+    top: 0;
+    width: 15%; /* Covers left & right portions for tapping */
+    height: 100%;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: auto;
+    touch-action: manipulation; /* Improves touch response */
+  }
+
+  .carousel-control-prev {
+    left: 0;
+    justify-content: flex-start; /* Keeps icon inside */
+  }
+
+  .carousel-control-next {
+    right: 0;
+    justify-content: flex-end; /* Keeps icon inside */
+  }
+}
+
+
+
+.we {
+  width: 180px;  /* Default size for larger screens */
+}
+
+@media (max-width: 992px) {  /* Tablet */
+  .we {
+    width: 140px;
+  }
+}
+
+@media (max-width: 768px) {  /* Mobile */
+  .we {
+    width: 100px;
+  }
+}
+
+
 .hero-background {
-  background-image: url("./images/lan.jpg"); /* Update path */
+/*  background-image: url("./images/lan2.jpg"); /* Update path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
- 
   position: relative;
   overflow: hidden;
+  
+  height: 100vh; /* Adjust height as needed */
 }
+
+@media (max-width: 768px) {
+  .hero-background {
+    background-size: auto; /* Adjust background size for smaller screens */
+  }
+}
+
+
+
 .hero-section {
   position: relative;
   z-index: 1;
@@ -29,10 +98,9 @@ html {
   width: 100%;
   height: 100%;
   background: inherit;
-  filter: blur(3px);
+ 
   z-index: -1;
 }
-
 
 
 * {
@@ -144,7 +212,7 @@ html {
 }
 
 .hero-section {
-  background-color: #fff5ee;
+/*  background-color: #fff5ee;*/
   padding: 0 0 250px 0;
   overflow: hidden;
   position: relative;
@@ -155,12 +223,17 @@ html {
   font-size: 4.5rem;
   color: #012620;
   padding-bottom: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  
 }
 
 .hero-text p {
   font-size: 1.5rem;
   color: #012620;
   padding-bottom: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  
+
 }
 
 .hero-text .btn {
@@ -215,8 +288,42 @@ html {
 
   .hero-text h1 {
       font-size: 1.8rem;
+      text-align:left;
   }
+  
+.text-muted{
+  text-align:left;
+  font-weight:bold;
 }
+}
+.nav-link:hover {
+  color : #d35400; /* Change to orange on hover */
+}
+.nav-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+.nav-item {
+  transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+.nav-item:hover {
+  background-color:  #e67e22;; /* Changes the background color to orange */
+}
+.nav-link {
+  color: #000; /* Default text color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover .nav-link {
+  color: white; /* Optionally change the text color when the nav-item is hovered */
+}
+
 
 /* Dropdown Menu Styles */
 .navbar .dropdown-menu {

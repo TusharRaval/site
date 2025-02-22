@@ -34,7 +34,7 @@ const ServicesPage = () => {
             whileHover={{ scale: 1.05 }} // Subtle hover effect
           >
             <div className="service-card shadow-sm p-4 text-center" id="s" style={{ cursor: "default" }}>
-              <i className={`${service.icon} service-icon`}></i>
+              <i className={`${service.icon} service-icon`} style={{overflowY:"hidden"}}></i>
               <h4 className="mt-3">{service.title}</h4>
               <p className="text-muted">{service.description}</p>
             </div>

@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./AboutUs.css";
 import CountUp from "react-countup";
 import { motion } from "framer-motion"; // Importing Framer Motion
-import oip from './images/OIP.jpg';
+import oip from './images/cco5.jpeg';
 import w from './images/o.jpg';
 import LandingPage from "./LandingPage";
 
@@ -16,7 +16,7 @@ const AboutUs = () => {
         className="text-center mb-4"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 3, ease: "easeOut" }}
+        transition={{ duration: 10, ease: "easeOut" }}
       >
         About Us
       </motion.h2>
@@ -27,7 +27,7 @@ const AboutUs = () => {
           className="col-md-6"
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 3, ease: "easeOut" }}
+          transition={{ duration: 10, ease: "easeOut" }}
         >
           <h3>Who We Are</h3>
           <p>
@@ -45,7 +45,7 @@ const AboutUs = () => {
           className="col-md-6"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 3, ease: "easeOut" }}
+          transition={{ duration: 10, ease: "easeOut" }}
         >
           <img src={oip} alt="Refurbishing Wheels" className="img-fluid rounded" />
         </motion.div>
@@ -57,10 +57,10 @@ const AboutUs = () => {
           className="col-md-6"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 3, ease: "easeOut" }}
+          transition={{ duration: 10, ease: "easeOut" }}
         >
           <h3>What We Do</h3>
-          <p>We offer complete **alloy wheel refurbishment**, including:</p>
+          <p>We offer complete alloy wheel refurbishment, including:</p>
           <ul>
             <li>Wheel Straightening</li>
             <li>Cosmetic Repairs</li>
@@ -73,7 +73,7 @@ const AboutUs = () => {
           className="col-md-6"
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 3, ease: "easeOut" }}
+          transition={{ duration: 10, ease: "easeOut" }}
         >
           <img src={w} alt="Refurbishment Process" className="img-fluid rounded" />
         </motion.div>
@@ -85,10 +85,10 @@ const AboutUs = () => {
           className="col-md-4"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 10, ease: "easeOut" }}
         >
           <h3>
-            <CountUp start={0} end={5000} duration={5} />+
+            <CountUp start={0} end={5000} duration={10} />+
           </h3>
           <p>Happy Customers</p>
         </motion.div>
@@ -99,7 +99,7 @@ const AboutUs = () => {
           transition={{ duration: 3, ease: "easeOut" }}
         >
           <h3>
-            <CountUp start={0} end={10} duration={5} />+
+            <CountUp start={0} end={6} duration={8} />+
           </h3>
           <p>Years of Experience</p>
         </motion.div>
@@ -110,7 +110,7 @@ const AboutUs = () => {
           transition={{ duration: 3, ease: "easeOut" }}
         >
           <h3>
-            <CountUp start={0} end={99} duration={5} />%
+            <CountUp start={0} end={99} duration={8} />%
           </h3>
           <p>Customer Satisfaction</p>
         </motion.div>
