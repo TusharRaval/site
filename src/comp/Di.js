@@ -323,8 +323,9 @@ const Di = () => {
     </div>
 
          {/* Footer */}
-         <Footer />
+        
         </div>
+        <Footer />
         </div>
     );
 };

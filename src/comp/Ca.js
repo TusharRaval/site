@@ -343,8 +343,9 @@ const Ca = () => {
     </div>
 </div>
             {/* Footer */}
-            <Footer />
+           
         </div>
+        <Footer />
         </div>
     );
 };
