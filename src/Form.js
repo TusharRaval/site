@@ -4,7 +4,7 @@ import { useState } from 'react';
 import axios from "axios";
 
 const Form = () => {
-  
+  const url = "http://localhost:5000";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -30,7 +30,7 @@ const Form = () => {
 
 
     try {
-      const response = await axios.post("http://localhost:5000/send-email", formData);
+      const response = await axios.post(`${url}/send-email`, formData);
       if (response.data.success) {
         setStatus("Email sent successfully!");
       } else {
