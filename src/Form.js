@@ -4,7 +4,7 @@ import { useState } from 'react';
 import axios from "axios";
 
 const Form = () => {
-  const url = "http://localhost:5000";
+  const url = "https://site-back-xv6h.onrender.com";
 
   const [formData, setFormData] = useState({
     name: "",
